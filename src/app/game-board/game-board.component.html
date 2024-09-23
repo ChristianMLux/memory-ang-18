@@ -1,0 +1,8 @@
+<div class="game-board">
+    @for (card of cards(); track card.id) {
+      <app-card 
+        [card]="card" 
+        (cardClick)="onCardClick(card)"
+      ></app-card>
+    }
+  </div>

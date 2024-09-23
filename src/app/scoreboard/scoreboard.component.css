@@ -1,0 +1,21 @@
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .score-item {
+    text-align: center;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .value {
+    font-size: 1.2em;
+  }

@@ -1,0 +1,8 @@
+<div class="card" 
+[ngClass]="{'flipped': card.flipped, 'matched': card.matched}" 
+(click)="onCardClick()">
+<div class="card-inner">
+<div class="card-front">?</div>
+<div class="card-back">{{ card.value }}</div>
+</div>
+</div>

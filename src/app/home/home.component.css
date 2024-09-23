@@ -1,0 +1,23 @@
+.home {
+    text-align: center;
+    padding: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  input {
+    margin: 10px 0;
+    padding: 5px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }

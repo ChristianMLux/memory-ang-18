@@ -1,0 +1,21 @@
+<div class="home">
+    <h1>Memory Game</h1>
+    <p>Welcome to the Memory Game! Enter your name to start playing.</p>
+    <form [formGroup]="playerForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="playerName">Your Name:</label>
+        <input id="playerName" type="text" formControlName="playerName">
+      </div>
+      @if (playerForm.get('playerName')?.invalid && (playerForm.get('playerName')?.dirty || playerForm.get('playerName')?.touched)) {
+        <div class="error">
+          @if (playerForm.get('playerName')?.errors?.['required']) {
+            <p>Name is required.</p>
+          }
+          @if (playerForm.get('playerName')?.errors?.['minlength']) {
+            <p>Name must be at least 2 characters long.</p>
+          }
+        </div>
+      }
+      <button type="submit" [disabled]="!playerForm.valid">Start New Game</button>
+    </form>
+  </div>
